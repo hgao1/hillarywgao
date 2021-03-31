@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style>
+  body {
+    background-image: url("/Users/hillarygao/Desktop/WebsiteImages/catCam-1.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-attachment: fixed;
+    bbackground-blend-mode: lighten;
+  }
+</style>
+<head>
+  <title>catCam</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="Users/hillarygao/Desktop/WebsiteImages/IMG_0116.ico">
+</head>
+<bodyCam>
+  <section>
+    <hr></hr>
+    <h1>c a t C a m</h1>
+    <p class="textMedia">
+      <hr></hr>
+      When we moved into our new apartment, we realized we had many different types of feral cats coming around:  <br>
+      Star Anise (grey, green eyes), Pepper (grey, green eyes), Flower (white and black), etc... <br>
+      With winter approaching, we set up a little house for them,
+      but realized it became a hassle to see which cat was around in order to feed it.<br>
+      (Or, to monitor whether or not the large racoons were eating the food we set out)<br>
+      So, catCam was created in order to accomplish a few simple goals: <br>
+    </p>
+      <div class="textMedia">
+        <ul style="list-style: square">
+          <li> Activate when triggered by motion sensor (microcontroller: Raspberry Pi Zero) </li>
+          <li> Take a picture (v.1) </li>
+          <li> Stream video (v.2) </li>
+          <li> Use ML to identify which cat is present </li>
+          <li> Send a text or email to notify </li>
+        </ul>
+      </div>
+  </section>
+  <section label="setup">
+    <hr></hr>
+    <div class="caption">
+      The set-up involved: <br>
+      <ul style="list-style: square">
+        <li> a microcontroller (Raspberry Pi Zero)</li>
+        <li> NoIR Camera </li>
+        <li> 4 Resistors <!-- TODO: list these --></li>
+        <li> OVO ultrasound (usually made for arduinos, I just had a lot lying around) </li>
+        <li> Breadboard, wires (for prototyping) </li>
+      </ul>
+      The total cost of which was around $30 (not bad!). <br>
+    </div>
+  </section>
+  <section label="code">
+    <div class="caption">
+      The code was a little more invovled, following <a href="https://www.barnesandnoble.com/w/tinyml-pete-warden/1135003214;jsessionid=0851CA717D426AD8581EB427355205F2.prodny_store01-atgap18?ean=9781492051992">
+         Warden & Situnayake's TinyML </a> and a <a href="https://www.coursera.org/learn/object-localization-tensorflow/home/welcome"> free online course on object localization </a>,
+         <br> I chose to use Google Colab (partially for its GPU storage, partially for easy sharing with my friends). <br>
+      The first version of the code (v1.0) is trained on many images of our backyard cats' faces, in various positions, <br>
+      in order to achieve object localization: detect where the cat face is. In addition to that, it predicts the "label",
+      or the cat's name (eg: "starAnise", "flower"). <br>
+      We then take these pre-trained weights and model, and apply it to new pictures. <br>
+      This allows us to input a cat's picture (hopefully recently taken), and for the machine to output: 1. name of cat (label), 2. position of cat. <br>
+      Future versions (v2.0) would involve implementing something like YOLO (or, tiny YOLO), and a live video-stream of the cats.
+
+    </div>
+  </section>
+  <section label="why?">
+    <div class="caption">
+      While using machine learning to identify images and classify them is not new, the implementation of such with small microcontrollers is not as widely used <br>
+      Many sources online require either a more advanced microcontroller (raspberry pi 4+) or an attachment that is able to run "like" a GPU. <br>
+      However, such limits the size and the mobility of our creation. <br>
+      With tinyML, the pre-trained model <b>takes up significantly less space, and can run not only faster, but on smaller devices</b>. <br>
+      This makes it perfect to also be more cost-efficient, running even on the Teeny (Arduino: $3). <br>
+      With lower price and more flexibility, the implementation can become much more <b>versatile, and be used in every-day situations</b>. <br>
+      </div>
+  </section>
+</bodyCam>
+<!-- TODO:
+1. draw setup
+2. link code
+3. explain machine learning (tiny ML)
+
+ -->
+</html>
