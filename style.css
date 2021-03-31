@@ -12,6 +12,12 @@
   font-size: 20px;
 
 }
+.heading{
+  padding: 30px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
 .textMedia{
   font-family: Courier;
   text-align: left;
@@ -52,6 +58,7 @@ h2 {
   font-size: 20px;
 }
 .media {
+  font-family:'Montserrat';
   background-color: ;
   padding: 30px;
   text-align: center;
@@ -71,11 +78,20 @@ h2 {
   padding: 4px;
   background-color: #fff8e8;
 }
+.generalrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 33%;
   padding: 4px;
   background-color: #fff8e8;
+}
+.generalcolumn{
+  flex: 33%;
+  padding: 10px;
 }
 
 .column img {
