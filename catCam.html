@@ -42,15 +42,18 @@
   <section label="setup">
     <hr></hr>
     <div class="caption">
-      The set-up involved: <br>
-      <ul style="list-style: square">
-        <li> a microcontroller (Raspberry Pi Zero)</li>
-        <li> NoIR Camera </li>
-        <li> 4 Resistors <!-- TODO: list these --></li>
-        <li> OVO ultrasound (usually made for arduinos, I just had a lot lying around) </li>
-        <li> Breadboard, wires (for prototyping) </li>
-      </ul>
-      The total cost of which was around $30 (not bad!). <br>
+      <img src="/Users/hillarygao/Desktop/WebsiteImages/catSchema.jpg" class="image" width="240" align="left" style="margin: 0px 50px 0px 20px;">
+      <p>
+        The set-up involved: <br>
+        <ul style="list-style: square">
+          <li> a microcontroller (Raspberry Pi Zero)</li>
+          <li> NoIR Camera </li>
+          <li> 4 Resistors <!-- TODO: list these --></li>
+          <li> OVO ultrasound (usually made for arduinos, I just had a lot lying around) </li>
+          <li> Breadboard, wires (for prototyping) </li>
+        </ul>
+        The total cost of which was around $30 (not bad!). <br>
+      </p>
     </div>
   </section>
   <section label="code">
@@ -64,6 +67,23 @@
       We then take these pre-trained weights and model, and apply it to new pictures. <br>
       This allows us to input a cat's picture (hopefully recently taken), and for the machine to output: 1. name of cat (label), 2. position of cat. <br>
       Future versions (v2.0) would involve implementing something like YOLO (or, tiny YOLO), and a live video-stream of the cats.
+      <br>
+      <br>
+
+      <img src="/Users/hillarygao/Desktop/WebsiteImages/FirstTraining.jpg" class="image" align="right" width="800" style="margin: 0px 50px 0px 20px;">
+      <p>
+        <div class="caption">
+          As you can see here, the preliminary training results are a bit mixed. For the more general cat Flower (black and white), <br>
+          and with a picture that clearly shows the face, as seen in (a), the model does not too bad. <br>
+          However, just swapping in other cats, such as Star Anise (grey), <br>
+          you can see that the model automatically classifies her as Flower -- shown in (b). <br>
+          Not only that, but if the picture isn't a good face picture, as shown in (c), <br>
+          the model has a really hard time finding any sort of "face". <br>
+          This just means that we need better training: more images of different cats and a more robust model. <br>
+          <br>
+          <br>
+        </div>
+      </p>
 
     </div>
   </section>

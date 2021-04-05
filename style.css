@@ -37,6 +37,24 @@
   color: black;
   font-size: 15px;
 }
+
+.boxed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px 2em;
+  padding: 10px;
+}
+.boxSmall{
+  padding: 10px;
+  background: #fff8e8;
+  font-family: 'Montserrat';
+  border: 5px solid #915136 ;
+  width: 150px;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
 p {
   color:blue;
 }
