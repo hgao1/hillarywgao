@@ -18,6 +18,7 @@
   color: black;
   font-size: 20px;
 }
+.tab { text-indent:40px }
 .textMedia{
   font-family: Courier;
   text-align: left;
@@ -40,9 +41,19 @@
 
 .boxed {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px 2em;
+  grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
+  grid-gap: 6px 1em;
   padding: 10px;
+  margin-left:1040px;
+}
+.boxedPaper {
+  display: grid;
+  grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
+  grid-gap: 6px 1em;
+  padding: 10px;
+  background-color: #FCF9EF;
+  margin-right:40px;
+  margin-left: 40px;
 }
 .boxSmall{
   padding: 10px;

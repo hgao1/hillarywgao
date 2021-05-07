@@ -3,27 +3,15 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <!-- below is for the tab label & setting up information: -->
 <style>
-/*
-.column:hover .image{
-  opacity:0.7;
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: right;
+  padding: 20px;
+  font-size: 20px;
 }
-.column:hover .middle{
-  opacity:1;
-}
-.column:hover .middleLong{
-  opacity:1;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translate(-10%, -10%);
-  -ms-transform: translate(-10%, -10%);
-  text-align: center;
-}
-*/
+
 </style>
 
 <head>
@@ -46,15 +34,16 @@
     </iframe>
   </section>
 <section>
-  <div class="boxed">
-    <div class="boxSmall"> <a href="#projects">Projects</a> </div>
-    <div class="boxSmall"> <a href="#about">About</a> </div>
-    <div class="boxSmall"> <a href="#timeline">Timeline</a> </div>
-    <div class="boxSmall"> <a href="#publications">Publications</a> </div>
-  </div>
 
-</section>
-<section>
+  <div class="sticky">
+    <div class="boxed">
+      <div class="boxSmall"> <a href="#projects" style="color: #C95249">Projects</a> </div>
+      <div class="boxSmall"> <a href="#about" style="color: #C95249">About</a> </div>
+      <div class="boxSmall"> <a href="#timeline" style="color: #C95249">Timeline</a> </div>
+      <div class="boxSmall"> <a href="#publications" style="color: #C95249">Publications</a> </div>
+      <div class="boxSmall"> <a href="eyes.html" style="color: #C95249">things I've seen</a> </div>
+    </div>
+  </div>
   <div class="header" id="projects">
     <h1>P R O J E C T S:</h1>
   </div class="header">
@@ -63,7 +52,7 @@
       <div class="item">
         <!-- Acoustic Camera -->
 
-        <a href="">
+        <a href="acoustic.html" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/AcousticCam.png" class="image" >
         </a>
         <span class="caption"> <b> Acoustic Holography</b> <hr> Research done to build an acoustic camera and discover its applications </hr></span>
@@ -72,7 +61,7 @@
 
       <!-- WYSTIAYT -->
       <div class = "item">
-        <a href="">
+        <a href="" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/filler.jpg" class="image">
         </a>
         <span class="caption"> <b> would you set the table if I asked you to? </b>
@@ -82,7 +71,7 @@
 
       <!-- Harvest -->
       <div class = "item">
-        <a href="harvest.html">
+        <a href="harvest.html" target="_blank">
         <img src="/Users/hillarygao/Desktop/WebsiteImages/harvesting.jpg" class = "image">
         </a>
         <span class="caption"> <b> Harvest </b>
@@ -92,7 +81,7 @@
 
       <!-- Lawn Mower -->
       <div class = "item">
-        <a href="lawnShark.html">
+        <a href="lawnShark.html" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/IMG_4461.jpg" class="image">
         </a>
         <span class="caption"> <b> LawnShark </b>
@@ -103,7 +92,7 @@
     <div class = "column">
       <!-- COVID19 JULIA -->
       <div class = "item">
-        <a href="">
+        <a href="https://rxcovea.org/research" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/RxCovea.png">
         </a>
         <span class = "caption"> <b> RxCovea </b>
@@ -112,7 +101,7 @@
       </div class = "item">
       <!-- Cat Cam -->
       <div class = "item">
-        <a href="catCam.html">
+        <a href="catCam.html" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/catCam.png">
         </a>
         <span class = "caption"> <b> catCam </b>
@@ -121,8 +110,8 @@
       </div class = "item">
 
       <!-- Central Park -->
-      <div class = "item">
-        <a href="">
+      <div class = "item" >
+        <a href="centralPark.html" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/IMG_8833.jpg">
         </a>
         <span class = "caption"> <b> Central Park Conservancy </b>
@@ -131,7 +120,7 @@
       </div class = "item">
       <!-- Wood Working -->
       <div class = "item">
-        <a href="">
+        <a href="others.html" target="_blank">
           <img src="/Users/hillarygao/Desktop/WebsiteImages/clamps.jpg">
         </a>
         <span class="caption"> <b> Other projects </b>
@@ -140,16 +129,13 @@
       </div class = "item">
     </div>
   </div>
-</section>
-<section>
+</div>
   <div class="me" id="about">
     <a href="/Users/hillarygao/Desktop/WScode/whodat.html">
       <h1>Hillary?</h1>
     </a>
   </div class="me">
-</section>
-<section>
-  <h2> T I M E L I N E </h2>
+<h2> T I M E L I N E </h2>
   <div class="textMedia" id = "timeline">
     <ul style="list-style: none;">
       <li><b> 2021: </b></li>
@@ -163,7 +149,7 @@
       <li><b> 2019: </b></li>
       <li> Central Park Conservancy Summer Internship</li>
       <li><b> 2016: </b></li>
-      <li> Acoustic Holography (Mar. 2016- May 2019)</li>
+      <li> Acoustic Holography (Mar. 2016- May 2020)</li>
     </ul>
   </div class="textMedia">
   <h2> T A L K S & P U B L I C A T I O N S </h2>
