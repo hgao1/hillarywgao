@@ -44,7 +44,7 @@
   grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
   grid-gap: 6px 1em;
   padding: 10px;
-  margin-left:1040px;
+  margin-left:90%;
 }
 .boxedPaper {
   display: grid;
@@ -60,7 +60,7 @@
   background: #fff8e8;
   font-family: 'Montserrat';
   border: 5px solid #915136 ;
-  width: 150px;
+  width: 100px;
   text-align: center;
   font-size: 15px;
   display: inline-block;
@@ -126,8 +126,10 @@ h2 {
 .column img {
   margin-top: 8px;
   position: relative;
-  width: 250px;
-  height: 300px;
+  /* width: 250px;
+  height: 300px; */
+  width: 20vw ;
+  height: 22vw;
 }
 div.item {
     /* To correctly align image, regardless of content height: */
@@ -135,8 +137,8 @@ div.item {
     display: inline-block;
     /* To horizontally center images and caption */
     text-align: center;
-    /* The width of the container also implies margin around the images. */
-    width: 260px;
+    /* The width of the container also implies margin around the images: 260px */
+    width: 22vw;
 }
 .caption {
     /* Make the caption a block so it occupies its own line. */
