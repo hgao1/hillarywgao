@@ -55,6 +55,15 @@
   margin-right:40px;
   margin-left: 40px;
 }
+.boxedReg{
+  font-family: Courier;
+  display: grid;
+  grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
+  grid-gap: 6px 1em;
+  padding: 10px;
+  margin-right:40px;
+  margin-left: 40px;
+}
 .boxSmall{
   padding: 10px;
   background: #fff8e8;
