@@ -207,3 +207,39 @@ html {
  margin-top: 0%;
  padding-bottom: 5%;
 }
+
+.vimeo-wrapper {
+       max-width: 980px;
+       position: relative;
+       margin: 0 auto;
+   }
+
+   .vimeo-standard {
+       float: left;
+       height: 300px;
+       width: 47%;
+       border: 0px solid #00FFFFFF;
+       margin: 10px;
+   }
+
+
+
+   @media (max-width:767px) {
+
+       .vimeo-standard {
+           float: none;
+           width: 80%;
+           margin: 0 auto;
+           padding-bottom: 10px;
+       }
+   }
+
+   .clearfix:before,
+   .clearfix:after {
+       content: " "; /* 1 */
+       display: table; /* 2 */
+   }
+
+   .clearfix:after {
+       clear: both;
+   }
