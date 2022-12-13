@@ -9,6 +9,7 @@
     background-attachment: fixed;
   }
 </style>
+
 <head>
   <title>acoustic holography</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
@@ -16,71 +17,102 @@
 </head>
 <bodyCam>
   <section>
-    <h1> A C O U S T I C  <br> H O L O G R A P H Y </h1>
-    <hr></hr>
+    <button type="button" onclick="location.href = './index.html';"> Home Page </button>
+    <h1> A C O U S T I C <br> H O L O G R A P H Y </h1>
+    <hr>
+    </hr>
     <div class="caption">
-      <img src="./WebsiteImages/acousticCircles.PNG" class="image" align="middle" width=80% style="margin: 0px 0px 0px 10%;">
-      <hr></hr>
+      <img src="./WebsiteImages/acousticCircles.PNG" class="image" align="middle" width=80%
+        style="margin: 0px 0px 0px 10%;">
+      <hr>
+      </hr>
       <div>
-        <img src="./WebsiteImages/AcousticCam.png" width=300px class="image" align="left" width="800" style="margin: 0px 50px 0px 20px;">
+        <img src="./WebsiteImages/AcousticCam.png" width=300px class="image" align="left" width="800"
+          style="margin: 0px 50px 0px 20px;">
         From March 2016 to May 2020, I worked with
         <a href="https://physics.nyu.edu/grierlab/home.html" style="color: #AE4ADC">
-        Professor David Grier </a> in NYU Physics' CSMR department. <br>
-        My research focused on not only building of an acoustic imaging device, but also discovering the uses and nuances of Acoustic Holography. <br>
-        In the large-scale device that we built, we have a microphone moving in a serpentine pattern (in x and y) while attached to stepper-motors controlled by an Arduino. <br>
-        The microphone is listening to a speaker that blasts a specific frequency (often 10-16 kHz, a range many in the lab called "annoying"). <br>
-        This speaker is told the specific frequency by a signal generator, which then tells the lock-in amplifier what to look for. <br>
-        The lock-in amplifier simultaneously takes in data from the microphone in order to emit a wave function, p(<b>r</b>), in terms of amplitude, u(<b>r</b>), and phase, phi(<b>r</b>).<br>
-        This has a lot of advantages over both optical and other acoustic holographic methods as ours is able to scan a large range, over the course of various frequencies, and return both an amplitude and phase.
+          Professor David Grier </a> in NYU Physics' CSMR department. <br>
+        My research focused on not only building of an acoustic imaging device, but also discovering the uses and
+        nuances of Acoustic Holography. <br>
+        In the large-scale device that we built, we have a microphone moving in a serpentine pattern (in x and y) while
+        attached to stepper-motors controlled by an Arduino. <br>
+        The microphone is listening to a speaker that blasts a specific frequency (often 10-16 kHz, a range many in the
+        lab called "annoying"). <br>
+        This speaker is told the specific frequency by a signal generator, which then tells the lock-in amplifier what
+        to look for. <br>
+        The lock-in amplifier simultaneously takes in data from the microphone in order to emit a wave function,
+        p(<b>r</b>), in terms of amplitude, u(<b>r</b>), and phase, phi(<b>r</b>).<br>
+        This has a lot of advantages over both optical and other acoustic holographic methods as ours is able to scan a
+        large range, over the course of various frequencies, and return both an amplitude and phase.
       </div>
   </section>
   <section>
-    <hr></hr>
-    <div class= "caption">
-      <img src="./WebsiteImages/wb.png" width=400px class="image" align="right" width="800" style="margin: 10px 50px 0px 20px;">
+    <hr>
+    </hr>
+    <div class="caption">
+      <img src="./WebsiteImages/wb.png" width=400px class="image" align="right" width="800"
+        style="margin: 10px 50px 0px 20px;">
       After we built our machine, we decided to test it with a water bottle between the speaker and microphone. <br>
       And we're able to see the water bottle, its square shape, and even its cap. (shown to the right) <br>
       When we try to control for the noise of the room by dividing out a scan of just the background, <br>
       we see a resonance in the water bottle: a concentration of energy.<br>
 
-      This concentration of energy can perhaps be best illustrated as an opera singer, hitting a note that makes a glass break.<br>
-      Where the crack starts is a weak point, and when the energy builds up it causes the crack to expand and the glass to shatter. <br>
-      And became especially interesting during my Central Park internship, <a href="centralPark.html" style="color: #AE4ADC"> bringing up the brief exploration </a> into how acoustic holography, <br>
+      This concentration of energy can perhaps be best illustrated as an opera singer, hitting a note that makes a glass
+      break.<br>
+      Where the crack starts is a weak point, and when the energy builds up it causes the crack to expand and the glass
+      to shatter. <br>
+      And became especially interesting during my Central Park internship, <a href="centralPark.html"
+        style="color: #AE4ADC"> bringing up the brief exploration </a> into how acoustic holography, <br>
       specifically our camera, can be used for sculpture conservation.
     </div>
-    <hr></hr>
+    <hr>
+    </hr>
     <img src="./WebsiteImages/balloon.jpg" class="image" align="center" width=60% style="margin: 10px 50px 40px 18%;">
-    <div class= "caption">
-      In addition to the water bottle, we also scanned two different balloons: one filled with Helium (He) and one filled with Sulfur-Hexafluoride (SF6). <br>
-      Where the speed of sound is around 1,000 m/s and 135 m/s, respectively. For reference, the speed of sound in air is 343 m/s. <br>
-      <hr></hr>
-      <img src="./WebsiteImages/balloonsimage.png" class="image" align="right" width="300" style="margin: 10px 10px 40px 10px;">
+    <div class="caption">
+      In addition to the water bottle, we also scanned two different balloons: one filled with Helium (He) and one
+      filled with Sulfur-Hexafluoride (SF6). <br>
+      Where the speed of sound is around 1,000 m/s and 135 m/s, respectively. For reference, the speed of sound in air
+      is 343 m/s. <br>
+      <hr>
+      </hr>
+      <img src="./WebsiteImages/balloonsimage.png" class="image" align="right" width="300"
+        style="margin: 10px 10px 40px 10px;">
       And, what we were able to see is that these balloons act as a converging and diverging lens! <br>
-      The SF6 balloon acts as a converging lens, concentrating the sound "energy", while the He balloon diverges the sound "energy". <br>
-      This is seen in the plot above. SF6 at the top and He at the bottom, and the lighter grey shade is meant to show the placement of the balloon in these slices. <br>
+      The SF6 balloon acts as a converging lens, concentrating the sound "energy", while the He balloon diverges the
+      sound "energy". <br>
+      This is seen in the plot above. SF6 at the top and He at the bottom, and the lighter grey shade is meant to show
+      the placement of the balloon in these slices. <br>
       These results are published in our paper: <br>
-      "Flexible wide-field high-resolution scanning camera for continuous-wave acoustic holography" <a href="https://pubmed.ncbi.nlm.nih.gov/30501339/" style="color: #AE4ADC">(click here) </a>
+      "Flexible wide-field high-resolution scanning camera for continuous-wave acoustic holography" <a
+        href="https://pubmed.ncbi.nlm.nih.gov/30501339/" style="color: #AE4ADC">(click here) </a>
     </div>
   </section>
-  <hr></hr>
+  <hr>
+  </hr>
   <section>
     <div class="caption"> <b>WHAT'S NEXT (for acoustic holography)?</b> </div> <br>
     <div class="caption">
       <b> frequency chirp: </b> <br>
-      We re-configured the SR830 lock-in amplifier as well as our GUI design in order to produce a "chirp" from the speaker (ranging from 600 - 13000 Hz). <br>
-      At each frequency, we were able to take data and obtain the position, amplitude, and frequency. Curious? <a href="https://github.com/hgao1/DS345Sweep" style="color: #AE4ADC">Check out my github here </a>. <br>
+      We re-configured the SR830 lock-in amplifier as well as our GUI design in order to produce a "chirp" from the
+      speaker (ranging from 600 - 13000 Hz). <br>
+      At each frequency, we were able to take data and obtain the position, amplitude, and frequency. Curious? <a
+        href="https://github.com/hgao1/DS345Sweep" style="color: #AE4ADC">Check out my github here </a>. <br>
     </div>
     <div class="caption">
       <br>
       <b> phononic crystal: </b> <br>
-      We then planned to use the frequency chirp/sweep, as well as the other elements detailed earlier to make the acoustic equivalent to a photonic crystal (a phononic crystal). <br>
-      This was a lattice of small, sphere-esque balloons filled with alternating Helium and SF6, and is shown below: <br>
-      <img src="./WebsiteImages/phononic.JPG" class="image" align="center" width=40% style="margin: 20px 10px 40px 30%;">
+      We then planned to use the frequency chirp/sweep, as well as the other elements detailed earlier to make the
+      acoustic equivalent to a photonic crystal (a phononic crystal). <br>
+      This was a lattice of small, sphere-esque balloons filled with alternating Helium and SF6, and is shown below:
+      <br>
+      <img src="./WebsiteImages/phononic.JPG" class="image" align="center" width=40%
+        style="margin: 20px 10px 40px 30%;">
     </div>
   </section>
   <section>
     <div class="text">
-      Special thanks to Professor David Grier, the Grier Group (Kim Mishra, AnneMarie Winters, Sidney Wolin, Mohammed Abdelaziz), and MRSEC.
+      Special thanks to Professor David Grier, the Grier Group (Kim Mishra, AnneMarie Winters, Sidney Wolin, Mohammed
+      Abdelaziz), and MRSEC.
     </div>
   </section>
 
@@ -88,4 +120,5 @@
 
 
 </bodyCam>
+
 </html>
