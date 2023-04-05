@@ -12,26 +12,33 @@
   font-size: 20px;
 
 }
-.heading{
+
+.heading {
   padding: 30px;
   text-align: center;
   color: black;
   font-size: 20px;
 }
-.tab { text-indent:40px }
-.textMedia{
+
+.tab {
+  text-indent: 40px
+}
+
+.textMedia {
   font-family: Courier;
   text-align: left;
   color: black;
   font-size: 20px;
 }
-.textCenter{
+
+.textCenter {
   font-family: 'Montserrat';
   text-align: center;
   color: black;
   font-size: 20px;
 
 }
+
 .text {
   font-family: 'Montserrat';
   text-align: left;
@@ -41,53 +48,60 @@
 
 .boxed {
   display: grid;
-  grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
   grid-gap: 6px 1em;
   padding: 10px;
-  margin-left:90%;
+  margin-left: 90%;
 }
+
 .boxedPaper {
   display: grid;
-  grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
   grid-gap: 6px 1em;
   padding: 10px;
   background-color: #FCF9EF;
-  margin-right:40px;
+  margin-right: 40px;
   margin-left: 40px;
 }
-.boxedReg{
+
+.boxedReg {
   font-family: Courier;
   display: grid;
-  grid-template-columns: 1fr,  1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
   grid-gap: 6px 1em;
   padding: 10px;
-  margin-right:40px;
+  margin-right: 40px;
   margin-left: 40px;
 }
-.boxSmall{
+
+.boxSmall {
   padding: 10px;
   background: #fff8e8;
   font-family: 'Montserrat';
-  border: 5px solid #915136 ;
+  border: 5px solid #915136;
   width: 100px;
   text-align: center;
   font-size: 15px;
   display: inline-block;
   vertical-align: top;
 }
+
 p {
-  color:blue;
+  color: blue;
 }
+
 h1 {
-  font-family:courier;
-  color:black;
+  font-family: courier;
+  color: black;
 }
+
 h2 {
-  font-family:courier;
-  color:black;
+  font-family: courier;
+  color: black;
   text-align: center;
   font-size: 30px;
 }
+
 .me {
   background-color: #915136;
   padding: 30px;
@@ -95,14 +109,16 @@ h2 {
   color: black;
   font-size: 20px;
 }
+
 .media {
-  font-family:'Montserrat';
+  font-family: 'Montserrat';
   background-color: ;
   padding: 30px;
   text-align: center;
   color: black;
   font-size: 20px;
 }
+
 .ImgButton {
   background-color: #950E18;
   color: white;
@@ -116,20 +132,23 @@ h2 {
   padding: 4px;
   background-color: #fff8e8;
 }
+
 .generalrow {
   display: flex;
   flex-wrap: wrap;
-  padding: 4px;
+  padding: 0 4px;
 }
+
 /* Create two equal columns that sits next to each other */
 .column {
-  flex: 33%;
+  flex: 50%;
   padding: 4px;
   background-color: #fff8e8;
 }
-.generalcolumn{
-  flex: 33%;
-  padding: 10px;
+
+.generalcolumn {
+  flex: 50%;
+  padding: 0 4px;
 }
 
 .column img {
@@ -137,24 +156,27 @@ h2 {
   position: relative;
   /* width: 250px;
   height: 300px; */
-  width: 20vw ;
+  width: 20vw;
   height: 22vw;
 }
+
 div.item {
-    /* To correctly align image, regardless of content height: */
-    vertical-align: top;
-    display: inline-block;
-    /* To horizontally center images and caption */
-    text-align: center;
-    /* The width of the container also implies margin around the images: 260px */
-    width: 22vw;
+  /* To correctly align image, regardless of content height: */
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images: 260px */
+  width: 22vw;
 }
+
 .caption {
-    /* Make the caption a block so it occupies its own line. */
-    display: block;
-    align-content: left;
-    font-family: "Montserrat";
+  /* Make the caption a block so it occupies its own line. */
+  display: block;
+  align-content: left;
+  font-family: "Montserrat";
 }
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -174,72 +196,80 @@ div.item {
   width: 100%;
   padding: 20px;
 }
+
 .vidContain {
-    width:200px; height:400px;
-    position:relative;
-    display:inline-block;
-    margin:10px;
+  width: 200px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
-hr{
-        height: 2px;
-        background-color: #915136;
-        opacity: 0.8;
-        border: none;
-    }
+
+hr {
+  height: 2px;
+  background-color: #915136;
+  opacity: 0.8;
+  border: none;
+}
 
 html {
-    scroll-behavior: smooth;
-   }
+  scroll-behavior: smooth;
+}
 
 #publications {
-    margin-top: 0%;
-    padding-bottom: 5%;
-   }
+  margin-top: 0%;
+  padding-bottom: 5%;
+}
+
 #timeline {
-   margin-top: 0%;
-   padding-bottom: 5%;
-  }
+  margin-top: 0%;
+  padding-bottom: 5%;
+}
+
 #projects {
-   margin-top: 0%;
-   padding-bottom: 2%;
-  }
+  margin-top: 0%;
+  padding-bottom: 2%;
+}
+
 #about {
- margin-top: 0%;
- padding-bottom: 5%;
+  margin-top: 0%;
+  padding-bottom: 5%;
 }
 
 .vimeo-wrapper {
-       max-width: 980px;
-       position: relative;
-       margin: 0 auto;
-   }
+  max-width: 980px;
+  position: relative;
+  margin: 0 auto;
+}
 
-   .vimeo-standard {
-       float: left;
-       height: 300px;
-       width: 47%;
-       border: 0px solid #00FFFFFF;
-       margin: 10px;
-   }
+.vimeo-standard {
+  float: left;
+  height: 300px;
+  width: 47%;
+  border: 0px solid #00FFFFFF;
+  margin: 10px;
+}
 
 
 
-   @media (max-width:767px) {
+@media (max-width:767px) {
 
-       .vimeo-standard {
-           float: none;
-           width: 80%;
-           margin: 0 auto;
-           padding-bottom: 10px;
-       }
-   }
+  .vimeo-standard {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
 
-   .clearfix:before,
-   .clearfix:after {
-       content: " "; /* 1 */
-       display: table; /* 2 */
-   }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
 
-   .clearfix:after {
-       clear: both;
-   }
+.clearfix:after {
+  clear: both;
+}
